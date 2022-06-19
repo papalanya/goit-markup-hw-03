@@ -163,11 +163,11 @@ img {
   color: var(--third-color);
 }
 .hero-btn {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  border-radius: 4px;
   letter-spacing: 0.06em;
   color: var(--third-color);
   background-color: var(--accent-color);
@@ -250,8 +250,7 @@ img {
 .team-item:last-child {
   margin-right: 0;
 }
-.team-item > .subtitle {
-  margin-top: 30px;
+.team-subtitle {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -261,7 +260,6 @@ img {
   color: var(--secondary-text-color);
 }
 .team-text {
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -269,7 +267,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Подвал */
 .footer {
   padding: 60px 0;
@@ -368,8 +369,11 @@ img {
 .gallery-item:nth-child(3n) {
   margin-right: 0;
 }
+.gallery-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
 .gallery-title {
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -377,10 +381,12 @@ img {
   color: var(--secondary-text-color);
 }
 .gallery-text {
-  margin: 4px 24px 20px 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.gallery-content {
+  padding: 20px 24px;
 }
